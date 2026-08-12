@@ -23,8 +23,8 @@ require("fzf-lua").setup({
 	previewers = {
 		builtin = {
 			treesitter = {
-				limit_b = 1024 * 1024 * 5,
-				disabled = { "markdown" },
+				limit_b = 1024 * 1024 * 1,
+				disabled = { "c", "cpp", "markdown" },
 			},
 		},
 	},
