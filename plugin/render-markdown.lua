@@ -5,6 +5,8 @@ vim.pack.add({
 })
 
 require("render-markdown").setup({
+	latex = { enabled = false },
+	yaml = { enabled = false },
 	completions = { lsp = { enabled = true } },
 })
 
