@@ -75,8 +75,6 @@ vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
 	callback = function()
 		if vim.g.diagnostic_float then
 			vim.diagnostic.open_float(nil, { focus = false })
-		else
-			return
 		end
 	end,
 })

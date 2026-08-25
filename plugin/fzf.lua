@@ -1,3 +1,5 @@
+local kmap = vim.keymap
+
 vim.pack.add({
 	"https://github.com/nvim-tree/nvim-web-devicons",
 	"https://github.com/ibhagwan/fzf-lua",
@@ -32,7 +34,6 @@ require("fzf-lua").setup({
 
 vim.cmd("FzfLua register_ui_select")
 
-local kmap = vim.keymap
 kmap.set("n", "<leader>,", "<cmd>FzfLua buffers sort_lastused=true<cr>", { desc = "Switch Buffer" })
 kmap.set("n", "<leader>/", "<cmd>FzfLua grep_curbuf<cr>", { desc = "Switch Buffer" })
 kmap.set("n", "<leader><space>", "<cmd>FzfLua files<cr>", { desc = "Find Files" })

@@ -1,3 +1,5 @@
+local kmap = vim.keymap
+
 vim.pack.add({
 	"https://github.com/akinsho/bufferline.nvim",
 })
@@ -11,5 +13,4 @@ require("bufferline").setup({
 	},
 })
 
-local map = vim.keymap.set
-map("n", "gb", "<cmd>BufferLinePick<cr>", { desc = "Bufferline Pick" })
+kmap.set("n", "gb", "<cmd>BufferLinePick<cr>", { desc = "Bufferline Pick" })

@@ -11,10 +11,9 @@ o.showmode = false
 o.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
 o.cursorline = true
 
--- Indenting
-o.expandtab = true
 o.shiftwidth = 4
 o.smartindent = true
+o.expandtab = true
 o.tabstop = 4
 o.softtabstop = 4
 
@@ -30,8 +29,6 @@ o.splitbelow = true
 o.splitright = true
 o.timeoutlen = 400
 o.undofile = true
--- go to previous/next line with h,l,left arrow and right arrow
--- when cursor reaches end/beginning of line
 opt.whichwrap:append("<>[]hl")
 g.root_spec = { "lsp", { ".git", "lua" }, "cwd" }
 
@@ -50,33 +47,32 @@ opt.fillchars = {
 	diff = "╱",
 	eob = " ",
 }
-opt.foldlevel = 99
+opt.foldlevel = 16
 opt.formatoptions = "jcroqlnt" -- tcqj
 opt.grepformat = "%f:%l:%c:%m"
 opt.grepprg = "rg --vimgrep"
-opt.inccommand = "nosplit" -- preview incremental substitute
 opt.jumpoptions = "view"
-opt.linebreak = true -- Wrap lines at convenient points
-opt.list = true -- Show some invisible characters (tabs...
+opt.linebreak = true
+opt.list = true
 opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
-opt.pumblend = 10 -- Popup blend
-opt.pumheight = 10 -- Maximum number of entries in a popup
-opt.relativenumber = true -- Relative line numbers
-opt.scrolloff = 10 -- Lines of context
+opt.pumblend = 15
+opt.pumheight = 15
+opt.relativenumber = true
+opt.scrolloff = 8
 opt.sessionoptions = { "buffers", "curdir", "tabpages", "winsize", "help", "globals", "skiprtp", "folds" }
-opt.shiftround = true -- Round indent
--- opt.shortmess:append({ W = true, I = true, c = true, C = true })
-opt.sidescrolloff = 8 -- Columns of context
+opt.shiftround = true
+opt.sidescrolloff = 8
 opt.spelllang = { "en", "ru" }
 opt.splitkeep = "screen"
-opt.termguicolors = true -- True color support
+opt.termguicolors = true
 opt.guicursor = ""
-opt.undolevels = 10000
-opt.updatetime = 250 -- Save swap file and trigger CursorHold
-opt.virtualedit = "block" -- Allow cursor to move where there is no text in visual block mode
-opt.wildmode = "longest:full,full" -- Command-line completion mode
-opt.winminwidth = 5 -- Minimum window width
-opt.wrap = false -- Disable line wrap
+opt.undolevels = 1000
+opt.updatetime = 500
+opt.virtualedit = "block"
+opt.wildmode = "longest:full,full"
+opt.winminwidth = 5
+opt.wrap = false
+opt.colorcolumn = "+1"
 
 -- Fix markdown indentation settings
 g.markdown_recommended_style = 0
@@ -86,7 +82,7 @@ g.loaded_perl_provider = 0
 g.loaded_node_provider = 0
 
 -- USER DEFINED VARIABLES
-g.diagnostic_float = false
+g.diagnostic_float = true
 g.enable_diagnostic_at_start = true
 ---------------------------
 
