@@ -21,6 +21,7 @@ wk.add({
 	{ "<leader>s", group = "search" },
 	{ "<leader>st", group = "tags" },
 	{ "<leader>u", group = "toggle" },
+	{ "<leader>ug", group = "Gitsigns" },
 	{ "<leader>w", group = "window" },
 	{ "<leader>x", group = "diagnostic" },
 })

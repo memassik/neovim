@@ -4,7 +4,7 @@ vim.pack.add({
 	"https://github.com/stevearc/conform.nvim",
 })
 
-kmap.set("n", "<leader>cf", function()
+kmap.set({"n", "v"}, "<leader>cf", function()
 	require("conform").format({
 		async = true,
 		lsp_format = "fallback",
