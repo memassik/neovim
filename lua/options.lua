@@ -27,7 +27,7 @@ o.ruler = false
 o.signcolumn = "yes"
 o.splitbelow = true
 o.splitright = true
-o.timeoutlen = 400
+o.timeoutlen = 300
 o.undofile = true
 opt.whichwrap:append("<>[]hl")
 g.root_spec = { "lsp", { ".git", "lua" }, "cwd" }
@@ -67,7 +67,7 @@ opt.splitkeep = "screen"
 opt.termguicolors = true
 opt.guicursor = ""
 opt.undolevels = 1000
-opt.updatetime = 500
+opt.updatetime = 300
 opt.virtualedit = "block"
 opt.wildmode = "longest:full,full"
 opt.winminwidth = 5
