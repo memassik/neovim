@@ -23,8 +23,8 @@ require("gruvbox").setup({
 	contrast = "hard",
 	palette_overrides = {},
 	overrides = {
-        NonText = {link = "GruvboxYellow"},
-    },
+		NonText = { link = "GruvboxYellow" },
+	},
 	dim_inactive = false,
 	transparent_mode = false,
 })

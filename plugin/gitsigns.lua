@@ -12,7 +12,7 @@ require("gitsigns").setup({
 		topdelete = { text = "‾" },
 		changedelete = { text = "~" },
 	},
-    trouble = false,
+	trouble = false,
 })
 
 kmap.set("n", "<leader>gb", "<cmd>Gitsigns blame_line<CR>", { desc = "BlameLine" })

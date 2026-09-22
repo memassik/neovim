@@ -4,7 +4,11 @@ vim.pack.add({
 	"https://github.com/neovim/nvim-lspconfig",
 })
 
-require("fidget").setup()
+require("fidget").setup({
+	notification = {
+		override_vim_notify = true,
+	},
+})
 
 vim.diagnostic.config({
 	severity_sort = true,
