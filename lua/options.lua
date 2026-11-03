@@ -11,18 +11,14 @@ o.showmode = false
 o.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
 o.cursorline = true
 
-o.shiftwidth = 4
 o.smartindent = true
-o.expandtab = true
-o.tabstop = 4
-o.softtabstop = 4
+o.expandtab = false
 
 o.ignorecase = true
 o.smartcase = true
 o.mouse = ""
 -- Numbers
 o.number = true
-o.numberwidth = 2
 o.ruler = false
 o.signcolumn = "yes"
 o.splitbelow = true
